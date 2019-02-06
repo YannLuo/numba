@@ -33,6 +33,8 @@ set +v
 source activate $CONDA_ENV
 set -v
 
+conda install -c conda-forge numpy=1.16.0 --yes
+
 # Install optional packages into activated env
 if [ "${VANILLA_INSTALL}" != "yes" ]; then
     # Scipy, CFFI, jinja2, IPython and pygments are optional dependencies, but exercised in the test suite
