@@ -33,7 +33,7 @@ set +v
 source activate $CONDA_ENV
 set -v
 
-conda install -c conda-forge numpy=1.14.2 --yes
+conda install -c conda-forge numpy=1.14.6 --yes
 
 # Install optional packages into activated env
 if [ "${VANILLA_INSTALL}" != "yes" ]; then
